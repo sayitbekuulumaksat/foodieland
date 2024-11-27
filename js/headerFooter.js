@@ -5,19 +5,19 @@ let navData = [
     name: "Home",
   },
   {
-    href: "#",
+    href: "./recipes.html",
     name: "Recipes",
   },
   {
-    href: "#",
+    href: "./blog.html",
     name: "Blog",
   },
   {
-    href: "#",
+    href: "./contact.html",
     name: "Contact",
   },
   {
-    href: "#",
+    href: "./aboutus.html",
     name: "About us",
   },
 ];
