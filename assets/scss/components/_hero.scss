@@ -1,0 +1,112 @@
+@import "../../helpers/mixins";
+
+.hero {
+  margin-top: 40px;
+  &__content {
+    @include dFlex();
+    // height: 640px;
+    // justify-content: flex-start;
+    position: relative;
+  }
+  &__badge {
+    position: absolute;
+    top: 50px;
+    right: 560px;
+  }
+
+  &__name {
+    @include dFlex();
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #fff;
+    width: 156px;
+    height: 45px;
+    border-radius: 30px;
+    &--text {
+      margin-left: 13px;
+    }
+  }
+  &__title {
+    font-size: 64px;
+    font-weight: 600;
+    text-align: left;
+    margin: 0px;
+  }
+  &__description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #00000099;
+  }
+    &__block_left {
+      width: 620px;
+      height: 640px;
+      padding: 50px;
+      background: #e7fafe;
+      border-radius: 50px 0 0 50px;
+      box-sizing: border-box;
+    }
+    &__block_right {
+      width: 660px;
+      height: 640px;
+      padding: 0;
+    }
+  
+  &__links {
+    display: flex;
+  }
+  &__link {
+    @include dFlex();
+    text-decoration: none;
+    background-color: #0000000d;
+    border-radius: 30px;
+    padding: 0px 16px;
+    color: #00000099;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 16px;
+    &--icon {
+      margin-right: 10px;
+    }
+  }
+  &__maskpng {
+    height: 640px;
+  }
+  &__chef {
+    @include dFlex();
+    margin-top: 99px;
+    &_profile {
+      display: flex;
+      align-items: center;
+    }
+    &_info {
+      font-size: 16px;
+      font-weight: 700;
+    //   line-height: 19.36px;
+      text-align: left;
+      margin-left: 16px;
+    }
+    &_name {
+      font-size: 14px;
+      font-weight: 500;
+    //   line-height: 16.94px;
+      text-align: left;
+      color: #00000099;
+      display: block;
+      margin-top: 8px;
+    }
+  }
+  &__recipes {
+    @include dFlex();
+    justify-content: center;
+    @include btn-black();
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    &--text {
+      margin-right: 15px;
+    }
+  }
+}

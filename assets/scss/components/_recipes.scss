@@ -1,0 +1,74 @@
+@import "../../helpers/mixins";
+.recipes {
+  margin-top: 130px;
+  text-align: center;
+  &__title {
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.09px;
+  }
+  &__description {
+    color: #00000099;
+    width: 705px;
+    margin: 0 auto;
+  }
+  &__items {
+    @include dFlex();
+    flex-wrap: wrap;
+    margin-top: 80px;
+  }
+
+  &__item {
+    text-decoration: none;
+    width: 400px;
+    height: 435px;
+    color: #000;
+    margin-top: 40px;
+    position: relative;
+    border-radius: 30px;
+    background: linear-gradient(to top, #e7f9fd, #e7f9fd00);
+    &_image {
+      width: 368px;
+      height: 250px;
+    }
+  }
+  &__info {
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 10px;
+    }
+    span {
+      margin-right: 24px;
+    }
+  }
+  &__name {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+    margin: 25px;
+  }
+  &__like {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 48px;
+    &--icon {
+      width: 25px;
+      height: 25px;
+      margin-top: 10px;
+    cursor: pointer;
+    }
+    &--redicon {
+      width: 25px;
+      height: 25px;
+      margin-top: 10px;
+      // display: none;
+    }
+  }
+}

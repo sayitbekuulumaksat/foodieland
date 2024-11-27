@@ -1,0 +1,46 @@
+@import "../../helpers/mixins";
+@import "../../helpers/vars";
+.footer {
+  margin-top: 160px;
+  padding-bottom: 50px;
+  &__logo {
+    width: 110px;
+    height: 30px;
+  }
+  &__content {
+    @include dFlex();
+  }
+  &__nav {
+    @include dFlex();
+  }
+  &__link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: left;
+    color: $nav-text-color;
+    // margin-right: 60px;
+  }
+  &__item {
+    margin-left: 60px;
+  }
+  hr {
+    border: 1px solid #0000001a;
+    margin: 48px 0;
+  }
+  &__copytext {
+    // margin: 0 auto;
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    color: #00000099;
+  }
+  &__socials {
+    width: 133px;
+    @include dFlex();
+    position: absolute;
+    top: 0px;
+    right: 0;
+  }
+}

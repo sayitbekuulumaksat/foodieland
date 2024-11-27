@@ -1,0 +1,53 @@
+@import "../../helpers/mixins";
+.categories {
+  margin-top: 160px;
+  &__part {
+    @include dFlex();
+  }
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.09px;
+  }
+  &__btn {
+    background-color: #e7fafe;
+    border-radius: 16px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.36px;
+    height: 60px;
+    width: 200px;
+    cursor: pointer;
+  }
+  &__menu {
+    @include dFlex();
+    margin-top: 80px;
+  }
+  &__item {
+    text-decoration: none;
+    width: 180px;
+    height: 202px;
+    position: relative;
+    img {
+      position: absolute;
+      top: -20px;
+      width: 100px;
+      height: auto;
+      left: 40px;
+    }
+    h3 {
+      color: #000;
+      font-weight: 600;
+      font-size: 18px;
+      width: 180px;
+      border-radius: 30px;
+      height: 132px;
+      background: linear-gradient(to top, var(--item-color), #70824600);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 30px;
+    }
+  }
+}

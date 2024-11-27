@@ -1,0 +1,12 @@
+@mixin dFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin btn-black {
+  background-color: black;
+  border-radius: 16px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}

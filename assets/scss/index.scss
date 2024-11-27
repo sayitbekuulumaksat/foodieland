@@ -1,0 +1,25 @@
+
+@import "../helpers/vars";
+@import "./components/main";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/categories";
+@import "./components/recipes";
+@import "./components/chef";
+@import "./components/instagram";
+@import "./components/delicious";
+@import "./components/inbox";
+@import "./components/footer";
+
+body {
+  font-family: "Inter", sans-serif;
+  color: $color;
+}
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+

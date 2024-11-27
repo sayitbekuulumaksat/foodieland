@@ -1,0 +1,42 @@
+@import "../../helpers/mixins";
+.instagram {
+  margin-top: 200px;
+  text-align: center;
+  background: linear-gradient(to top, #e7f9fd, #e7f9fd00);
+  padding-bottom: 80px;
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.09px;
+  }
+  &__description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #00000099;
+    width: 840px;
+    margin: 0 auto;
+  }
+  &__photos {
+    @include dFlex();
+    margin-top: 80px;
+
+    &_item {
+      width: 290px;
+      height: 445.44px;
+    }
+  }
+
+  &__btn {
+    @include btn-black();
+    @include dFlex();
+    justify-content: center;
+    width: 230px;
+    height: 60px;
+    margin: 80px auto 0;
+    a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 17px;
+    }
+  }
+}
