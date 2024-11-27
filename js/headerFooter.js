@@ -1,7 +1,7 @@
 let logo = "./assets/img/header/Foodieland.logo.svg";
 let navData = [
   {
-    href: "#",
+    href: "./index.html",
     name: "Home",
   },
   {
