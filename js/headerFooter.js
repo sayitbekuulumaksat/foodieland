@@ -20,6 +20,10 @@ let navData = [
     href: "./aboutus.html",
     name: "About us",
   },
+  {
+    href: "#",
+    name: "Favorites",
+  },
 ];
 let socialsData = [
   {
@@ -47,7 +51,11 @@ let headerPart = `
 <ul class="header__nav">
 `;
 for (const item of navData) {
+  if(item.name.includes("Favorites")){
+    headerPart += `<li class="header__item"><a href='${item.href}' class="header__link">${item.name}</a><span class ="favorites__number"></span></li>`;
+  }else{
   headerPart += `<li class="header__item"><a href='${item.href}' class="header__link">${item.name}</a> </li>`;
+  }
 }
 headerPart += `</ul> <div class="header__socials">`;
 for (const item of socialsData) {
