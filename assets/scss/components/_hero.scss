@@ -1,7 +1,7 @@
 @import "../../helpers/mixins";
 
 .hero {
-  margin-top: 40px;
+  margin-top: 80px;
   &__content {
     @include dFlex();
     // height: 640px;

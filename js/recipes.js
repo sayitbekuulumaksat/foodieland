@@ -111,13 +111,13 @@ let heart = document.querySelectorAll(".recipes__like--icon");
 function hearClick(e) {
   if (e.target.src.includes("redheart")) {
     e.target.src = "./assets/img/recipes/heart.svg";
-    favorites = favorites.filter((item)=> item.id !== e.target.id)
-    console.log(favorites)
+    favorites = favorites.filter((item) => item.id !== e.target.id);
+    console.log(e.target.id);
   } else {
     e.target.src = "./assets/img/recipes/redheart.svg";
 
     favorites.push(recipesData[e.target.id]);
-    console.log(favorites);
+    // console.log(favorites);
   }
   favoritesNum.innerHTML = favorites.length;
   if (favoritesNum.textContent == 0) {
